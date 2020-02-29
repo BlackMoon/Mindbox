@@ -20,7 +20,7 @@ namespace Task1.Tests
         {
             var expected = Math.PI * radius * radius;
             var result = this.processor.Execute(radius);
-            Assert.Equal(result, expected);
+            Assert.Equal(expected, result);
         }
     }
 }

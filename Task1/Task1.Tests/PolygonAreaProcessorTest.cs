@@ -20,7 +20,7 @@ namespace Task1.Tests
             var y = new double[] { 0, 1, 1 };
 
             var result = this.processor.Execute(x, y);
-            Assert.Equal(result, 0.5);
+            Assert.Equal(0.5f, result);
         }
 
         [Fact]
@@ -30,7 +30,7 @@ namespace Task1.Tests
             var y = new double[] { 0, 1, 1, 0 };
 
             var result = this.processor.Execute(x, y);
-            Assert.Equal(result, 1);
+            Assert.Equal(1f, result);
         }
     }
 }

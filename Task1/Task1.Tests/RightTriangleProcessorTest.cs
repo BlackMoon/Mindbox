@@ -22,7 +22,7 @@ namespace Task1.Tests
             var expected = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
 
             var result = this.processor.Execute(a, b, c);
-            Assert.Equal(result, expected);
+            Assert.Equal(expected, result);
         }
     }
 }
