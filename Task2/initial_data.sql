@@ -17,11 +17,11 @@ VALUES
     (10, 'How to pass a custom script to ./configure to be run after the compiling?'),
     (11, 'How to rotate an array right(clockwise)');
 
-SET IDENTITY_INSERT Articles ON;
+SET IDENTITY_INSERT Articles OFF;
 
 GO
 
-SET IDENTITY_INSERT Tags OFF;
+SET IDENTITY_INSERT Tags ON;
 
 INSERT INTO Tags(TagId, TagName)
 VALUES
@@ -58,6 +58,8 @@ VALUES
     (31, 'configure');
 
 GO
+
+SET IDENTITY_INSERT Tags OFF;
 
 INSERT INTO ArticleTags(ArticleId, TagId)
 VALUES
