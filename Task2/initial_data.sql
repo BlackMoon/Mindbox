@@ -1,7 +1,7 @@
 USE [SSISDB]
 GO
 
-SET IDENTITY_INSERT Articles OFF;
+SET IDENTITY_INSERT Articles ON;
 
 INSERT INTO Articles(ArticleId, ArticleName)
 VALUES
